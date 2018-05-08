@@ -71,7 +71,7 @@ class Ball(Velocity):
                 self.ball_pos_set((x_pos,-y_pos))
             else :
                 self.ball_pos_set((x_pos,screen_height-(y_pos-screen_height)))
-                self.velocity_loss(0.96)
+                self.velocity_loss(0.8)
                 #print('当前小球速度为{{x_v={0[0]},y_v={0[1]}}}'.format(self.velocity_decompose()))
         self.ball_pos_update()
         
